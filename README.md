@@ -58,3 +58,77 @@ This project supports **predictive maintenance** strategies to:
    git clone https://github.com/your-username/gas-turbine-fault-detection.git
    cd gas-turbine-fault-detection
 
+Great idea! Adding `venv` support will help users who prefer **pure Python environments** without Conda. Here's the updated section for your `README.md`:
+
+---
+
+## Setting Up the Environment
+
+This project supports both **Conda** and **Python virtual environments (venv)**.
+
+---
+
+### Option 1: Using `conda` (Recommended)
+
+Create the environment from `environment.yml`:
+
+```bash
+conda env create -f environment.yml
+```
+
+Or from an exact export file (`environment.txt`):
+
+```bash
+conda create --name turbine_fault_env --file environment.txt
+```
+
+Activate it:
+
+```bash
+conda activate turbine_fault_env
+```
+
+Update an existing env:
+
+```bash
+conda env update -f environment.yml --prune
+```
+
+---
+
+### Option 2: Using `venv` (Python Virtual Environment)
+
+If you prefer `venv`:
+
+1. **Create the environment**:
+
+   ```bash
+   python3 -m venv venv
+   ```
+
+2. **Activate the environment**:
+
+   - On macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+   - On Windows:
+     ```bash
+     .\venv\Scripts\activate
+     ```
+
+3. **Install dependencies** from `requirements.txt`:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. (Optional) **Freeze dependencies** for later use:
+
+   ```bash
+   pip freeze > requirements.txt
+   ```
+
+
+
+
