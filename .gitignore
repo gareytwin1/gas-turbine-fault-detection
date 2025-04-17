@@ -12,12 +12,6 @@ __pycache__/
 .venv/
 *.env
 
-# Data files
-data/raw/
-data/processed/
-*.csv
-*.xlsx
-
 # Model artifacts
 models/
 *.pkl
